@@ -23,8 +23,7 @@ public class UserProfile {
     @JoinColumn(name = "id")
     List<Job> jobs = new ArrayList<>();
 
-    @OneToMany(cascade = CascadeType.ALL,
-            orphanRemoval = true)
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)
     @JoinColumn(name = "id")
     List<Education> educations = new ArrayList<>();
 
